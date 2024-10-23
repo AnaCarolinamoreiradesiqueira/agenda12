@@ -1,8 +1,8 @@
 <?php
-$host = "localhost:3306";
-$user = "root";
-$pass = "planejamento";
-$dbname = "teste";
+ $host = "localhost:3306";
+ $user = "root";
+ $pass = "";
+$dbname = "cadastro";
 $conn = new mysqli($host, $user, $pass, $dbname);
 
 

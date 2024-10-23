@@ -6,11 +6,11 @@
    
 </head>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "planejamento";
-$dbname = "teste";
-$conn = new mysqli($servername, $username, $password, $dbname);
+ $host = "localhost:3306";
+ $user = "root";
+ $pass = "";
+$dbname = "cadastro";
+$conn = new mysqli($host, $user, $pass, $dbname);
 
 $dataPesquisa = isset($_POST['data_evento']) ? $_POST['data_evento'] : '';
 

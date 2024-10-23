@@ -7,11 +7,10 @@ $DESCRIEVENT = $_POST['descrievent'];
 $LOCALEVENT = $_POST['localevent'];
 $RESPONEVENT = $_POST['responevent'];
 $host = "localhost:3306";
- $user = "root";
- $pass = "planejamento";
-$dbname = "teste";
+$user = "root";
+$pass = "";
+$dbname = "cadastro";
 $conn = new mysqli($host, $user, $pass, $dbname);
-
 
 
 $resultinsert = mysqli_query($conn, "INSERT INTO cadastro (nmevent, dtevent, hrincevent, hrfimevent, descrievent, localevent, responevent) VALUES ('$NMEVENT', '$DTEVENT', '$HRINCEVENT', '$HRFIMEVENT', '$DESCRIEVENT', '$LOCALEVENT', '$RESPONEVENT')");
